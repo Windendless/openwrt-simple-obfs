@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/shadowsocks/simple-obfs.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
-PKG_SOURCE_VERSION:=149b57d24d90fff3f7983b42967f6354acb5eeca
+PKG_SOURCE_VERSION:=cf8a62a7c868c455c458fc2c7970c6919111547e
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_LICENSE:=GPLv3
@@ -35,7 +35,7 @@ define Package/simple-obfs/Default
 	CATEGORY:=Network
 	TITLE:=Simple-obfs
 	URL:=https://github.com/shadowsocks/simple-obfs
-	DEPENDS:=+libpthread
+	DEPENDS:=+libpthread +libsodium +libev
 endef
 
 Package/simple-obfs = $(call Package/simple-obfs/Default)
