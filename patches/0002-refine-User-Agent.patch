@@ -1,0 +1,25 @@
+From 7c8df7fe32ef4d45bf59c61c7d9d7bca43ae6602 Mon Sep 17 00:00:00 2001
+From: Windendless <my8159@gmail.com>
+Date: Tue, 25 Jul 2017 13:03:54 +0800
+Subject: [PATCH] refine User-Agent
+
+---
+ src/obfs_http.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/obfs_http.c b/src/obfs_http.c
+index cd1a2d1..36b0661 100644
+--- a/src/obfs_http.c
++++ b/src/obfs_http.c
+@@ -34,7 +34,7 @@
+ static const char *http_request_template =
+     "GET / HTTP/1.1\r\n"
+     "Host: %s\r\n"
+-    "User-Agent: curl/7.%d.%d\r\n"
++    "User-Agent: Opera/9.80 (X11; Linux x86_64) Presto/2.%d.%d Version/12.16\r\n"
+     "Upgrade: websocket\r\n"
+     "Connection: Upgrade\r\n"
+     "Sec-WebSocket-Key: %s\r\n"
+-- 
+2.10.0
+
